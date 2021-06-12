@@ -1,0 +1,5 @@
+.env
+db.sqlite3
+/__pychache__
+.vscode
+node_modules
