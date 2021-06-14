@@ -69,7 +69,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000/',
-    'http://localhost:8000/',   
+    'http://localhost:8000/',
+    'https://festive-beaver-975bbf.netlify.app/',
 ]
 
 CORS_ALLOW_METHODS =[
