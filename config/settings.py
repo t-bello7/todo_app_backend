@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default= False)
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['https://todo-app-api-tomi.herokuapp.com/','localhost']
 
 
 # Application definition
@@ -158,3 +158,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 django_heroku.settings(locals())
+del DATABASES['default']['OPTIONS']['sslmode']
